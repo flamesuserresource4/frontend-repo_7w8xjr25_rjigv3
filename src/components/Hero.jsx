@@ -21,6 +21,21 @@ export default function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
             Student, Full‑Stack Developer & Aspiring Entrepreneur
           </h1>
+
+          {/* High-class callout line */}
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="mt-5 inline-flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-md shadow-lg shadow-blue-500/10"
+          >
+            <span className="inline-block h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 shadow-[0_0_12px_rgba(34,211,238,0.8)]" />
+            <p className="text-sm md:text-base text-blue-50/95">
+              An immersive hero with an interactive 3D scene you can play with. It responds to mouse/touch,
+              giving that “techy waterfall” vibe you asked for.
+            </p>
+          </motion.div>
+
           <p className="mt-6 text-blue-100/90 text-lg">
             I build modern web products with delightful user experiences and a business mindset. Exploring startups, product strategy, and scalable systems.
           </p>
